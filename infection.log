@@ -1,0 +1,56 @@
+Escaped mutants:
+================
+
+Timed Out mutants:
+==================
+
+Skipped mutants:
+================
+
+Killed mutants:
+===============
+
+1) /Users/charles/Workspace/perso/testinfection/src/SourceClass.php:7    [M] PublicVisibility
+
+--- Original
++++ New
+@@ @@
+ 
+ class SourceClass
+ {
+-    public function hello() : string
++    protected function hello() : string
+     {
+         return 'hello';
+     }
+ }
+
+$ '/Users/charles/Workspace/perso/testinfection/vendor/phpunit/phpunit/phpunit' '--configuration' '/var/folders/4q/tdlvv18x0wb1sh19lxlyxwzm0000gn/T/infection/phpunitConfiguration.00eb8d7693009a61d485a5b74fcc8d1a.infection.xml'
+  PHPUnit 9.5.9 by Sebastian Bergmann and contributors.
+  
+  Warning:       Your XML configuration validates against a deprecated schema.
+  Suggestion:    Migrate your XML configuration using "--migrate-configuration"!
+  
+  E                                                                   1 / 1 (100%)
+  
+  Time: 00:00.002, Memory: 8.00 MB
+  
+  There was 1 error:
+  
+  1) App\SourceClassTest::test_hello
+  Error: Call to protected method App\SourceClass::hello() from scope App\SourceClassTest
+  
+  /Users/charles/Workspace/perso/testinfection/tests/SourceClassTest.php:12
+  
+  ERRORS!
+  Tests: 1, Assertions: 0, Errors: 1.
+
+
+Errors mutants:
+===============
+
+Syntax Errors mutants:
+======================
+
+Not Covered mutants:
+====================
