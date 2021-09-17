@@ -18,14 +18,14 @@ Killed mutants:
  
  class SourceClass
  {
--    public function hello() : string
-+    protected function hello() : string
+-    public function hello(string $firstname) : string
++    protected function hello(string $firstname) : string
      {
-         return 'hello';
+         return 'hello ' . $firstname;
      }
  }
 
-$ '/Users/charles/Workspace/perso/testinfection/vendor/phpunit/phpunit/phpunit' '--configuration' '/var/folders/4q/tdlvv18x0wb1sh19lxlyxwzm0000gn/T/infection/phpunitConfiguration.00eb8d7693009a61d485a5b74fcc8d1a.infection.xml'
+$ '/Users/charles/Workspace/perso/testinfection/vendor/phpunit/phpunit/phpunit' '--configuration' '/var/folders/4q/tdlvv18x0wb1sh19lxlyxwzm0000gn/T/infection/phpunitConfiguration.c1c5d337e5fa84df1872cf82c0ad6401.infection.xml'
   PHPUnit 9.5.9 by Sebastian Bergmann and contributors.
   
   Warning:       Your XML configuration validates against a deprecated schema.
@@ -44,6 +44,123 @@ $ '/Users/charles/Workspace/perso/testinfection/vendor/phpunit/phpunit/phpunit' 
   
   ERRORS!
   Tests: 1, Assertions: 0, Errors: 1.
+
+
+2) /Users/charles/Workspace/perso/testinfection/src/SourceClass.php:9    [M] Concat
+
+--- Original
++++ New
+@@ @@
+ {
+     public function hello(string $firstname) : string
+     {
+-        return 'hello ' . $firstname;
++        return $firstname . 'hello ';
+     }
+ }
+
+$ '/Users/charles/Workspace/perso/testinfection/vendor/phpunit/phpunit/phpunit' '--configuration' '/var/folders/4q/tdlvv18x0wb1sh19lxlyxwzm0000gn/T/infection/phpunitConfiguration.6ef385bd195453effdf64e186977c98a.infection.xml'
+  PHPUnit 9.5.9 by Sebastian Bergmann and contributors.
+  
+  Warning:       Your XML configuration validates against a deprecated schema.
+  Suggestion:    Migrate your XML configuration using "--migrate-configuration"!
+  
+  F                                                                   1 / 1 (100%)
+  
+  Time: 00:00.002, Memory: 8.00 MB
+  
+  There was 1 failure:
+  
+  1) App\SourceClassTest::test_hello
+  Failed asserting that two strings are identical.
+  --- Expected
+  +++ Actual
+  @@ @@
+  -'hello Charles'
+  +'Charleshello '
+  
+  /Users/charles/Workspace/perso/testinfection/tests/SourceClassTest.php:12
+  
+  FAILURES!
+  Tests: 1, Assertions: 1, Failures: 1.
+
+
+3) /Users/charles/Workspace/perso/testinfection/src/SourceClass.php:9    [M] ConcatOperandRemoval
+
+--- Original
++++ New
+@@ @@
+ {
+     public function hello(string $firstname) : string
+     {
+-        return 'hello ' . $firstname;
++        return $firstname;
+     }
+ }
+
+$ '/Users/charles/Workspace/perso/testinfection/vendor/phpunit/phpunit/phpunit' '--configuration' '/var/folders/4q/tdlvv18x0wb1sh19lxlyxwzm0000gn/T/infection/phpunitConfiguration.06f530525136955d0c1592122dbbb77d.infection.xml'
+  PHPUnit 9.5.9 by Sebastian Bergmann and contributors.
+  
+  Warning:       Your XML configuration validates against a deprecated schema.
+  Suggestion:    Migrate your XML configuration using "--migrate-configuration"!
+  
+  F                                                                   1 / 1 (100%)
+  
+  Time: 00:00.002, Memory: 8.00 MB
+  
+  There was 1 failure:
+  
+  1) App\SourceClassTest::test_hello
+  Failed asserting that two strings are identical.
+  --- Expected
+  +++ Actual
+  @@ @@
+  -'hello Charles'
+  +'Charles'
+  
+  /Users/charles/Workspace/perso/testinfection/tests/SourceClassTest.php:12
+  
+  FAILURES!
+  Tests: 1, Assertions: 1, Failures: 1.
+
+
+4) /Users/charles/Workspace/perso/testinfection/src/SourceClass.php:9    [M] ConcatOperandRemoval
+
+--- Original
++++ New
+@@ @@
+ {
+     public function hello(string $firstname) : string
+     {
+-        return 'hello ' . $firstname;
++        return 'hello ';
+     }
+ }
+
+$ '/Users/charles/Workspace/perso/testinfection/vendor/phpunit/phpunit/phpunit' '--configuration' '/var/folders/4q/tdlvv18x0wb1sh19lxlyxwzm0000gn/T/infection/phpunitConfiguration.c6b294432f9f6d97f344301cdfa0b18a.infection.xml'
+  PHPUnit 9.5.9 by Sebastian Bergmann and contributors.
+  
+  Warning:       Your XML configuration validates against a deprecated schema.
+  Suggestion:    Migrate your XML configuration using "--migrate-configuration"!
+  
+  F                                                                   1 / 1 (100%)
+  
+  Time: 00:00.002, Memory: 8.00 MB
+  
+  There was 1 failure:
+  
+  1) App\SourceClassTest::test_hello
+  Failed asserting that two strings are identical.
+  --- Expected
+  +++ Actual
+  @@ @@
+  -'hello Charles'
+  +'hello '
+  
+  /Users/charles/Workspace/perso/testinfection/tests/SourceClassTest.php:12
+  
+  FAILURES!
+  Tests: 1, Assertions: 1, Failures: 1.
 
 
 Errors mutants:

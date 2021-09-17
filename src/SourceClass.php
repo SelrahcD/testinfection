@@ -4,8 +4,8 @@ namespace App;
 
 class SourceClass
 {
-    public function hello(): string
+    public function hello(string $firstname): string
     {
-        return 'hello';
+        return 'hello ' . $firstname;
     }
 }

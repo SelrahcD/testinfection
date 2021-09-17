@@ -9,6 +9,6 @@ class SourceClassTest extends TestCase
     public function test_hello()
     {
         $sourceClass = new SourceClass();
-        $this->assertSame('hello', $sourceClass->hello());
+        $this->assertSame('hello Charles', $sourceClass->hello('Charles'));
     }
 }
