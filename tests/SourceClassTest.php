@@ -2,6 +2,7 @@
 
 namespace App;
 
+use ApprovalTests\Approvals;
 use PHPUnit\Framework\TestCase;
 
 class SourceClassTest extends TestCase
@@ -9,6 +10,6 @@ class SourceClassTest extends TestCase
     public function test_hello()
     {
         $sourceClass = new SourceClass();
-        $this->assertSame('hello Charles', $sourceClass->hello('Charles'));
+        Approvals::verifyString($sourceClass->hello('Charles'));
     }
 }
