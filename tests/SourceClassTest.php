@@ -2,14 +2,20 @@
 
 namespace App;
 
-use ApprovalTests\Approvals;
+use ApprovalTests\CombinationApprovals;
 use PHPUnit\Framework\TestCase;
 
 class SourceClassTest extends TestCase
 {
     public function test_hello()
     {
-        $sourceClass = new SourceClass();
-        Approvals::verifyString($sourceClass->hello('Charles'));
+        $firstnames = ['Charles'];
+
+        CombinationApprovals::verifyAllCombinations1(function ($firstname) {
+            $sourceClass = new SourceClass();
+            return $sourceClass->hello($firstname);
+        }, $firstnames);
+
+
     }
 }
