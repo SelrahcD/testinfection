@@ -1,15 +1,6 @@
 Escaped mutants:
 ================
 
-Timed Out mutants:
-==================
-
-Skipped mutants:
-================
-
-Killed mutants:
-===============
-
 1) /Users/charles/Workspace/perso/testinfection/src/SourceClass.php:7    [M] PublicVisibility
 
 --- Original
@@ -31,22 +22,11 @@ $ '/Users/charles/Workspace/perso/testinfection/vendor/phpunit/phpunit/phpunit' 
   Warning:       Your XML configuration validates against a deprecated schema.
   Suggestion:    Migrate your XML configuration using "--migrate-configuration"!
   
-  E                                                                   1 / 1 (100%)
+  .                                                                   1 / 1 (100%)
   
-  Time: 00:00.002, Memory: 8.00 MB
+  Time: 00:00.003, Memory: 8.00 MB
   
-  There was 1 error:
-  
-  1) App\SourceClassTest::test_hello
-  Error: Call to protected method App\SourceClass::hello() from scope App\SourceClassTest
-  
-  /Users/charles/Workspace/perso/testinfection/tests/SourceClassTest.php:19
-  /Users/charles/Workspace/perso/testinfection/vendor/approvals/approval-tests/src/CombinationApprovals.php:68
-  /Users/charles/Workspace/perso/testinfection/vendor/approvals/approval-tests/src/CombinationApprovals.php:16
-  /Users/charles/Workspace/perso/testinfection/tests/SourceClassTest.php:17
-  
-  ERRORS!
-  Tests: 1, Assertions: 0, Errors: 1.
+  OK (1 test, 1 assertion)
 
 
 2) /Users/charles/Workspace/perso/testinfection/src/SourceClass.php:9    [M] Concat
@@ -68,26 +48,11 @@ $ '/Users/charles/Workspace/perso/testinfection/vendor/phpunit/phpunit/phpunit' 
   Warning:       Your XML configuration validates against a deprecated schema.
   Suggestion:    Migrate your XML configuration using "--migrate-configuration"!
   
-  E                                                                   1 / 1 (100%)
+  .                                                                   1 / 1 (100%)
   
   Time: 00:00.003, Memory: 8.00 MB
   
-  There was 1 error:
-  
-  1) App\SourceClassTest::test_hello
-  ApprovalTests\ApprovalMismatchException: The approved file does not match the received file
-  Approved: /Users/charles/Workspace/perso/testinfection/tests/approvals/SourceClassTest.test_hello.approved.txt
-  Received: /Users/charles/Workspace/perso/testinfection/tests/approvals/SourceClassTest.test_hello.received.txt
-  
-  /Users/charles/Workspace/perso/testinfection/vendor/approvals/approval-tests/src/Approvals.php:57
-  /Users/charles/Workspace/perso/testinfection/vendor/approvals/approval-tests/src/Approvals.php:20
-  /Users/charles/Workspace/perso/testinfection/vendor/approvals/approval-tests/src/Approvals.php:15
-  /Users/charles/Workspace/perso/testinfection/vendor/approvals/approval-tests/src/CombinationApprovals.php:84
-  /Users/charles/Workspace/perso/testinfection/vendor/approvals/approval-tests/src/CombinationApprovals.php:16
-  /Users/charles/Workspace/perso/testinfection/tests/SourceClassTest.php:17
-  
-  ERRORS!
-  Tests: 1, Assertions: 1, Errors: 1.
+  OK (1 test, 1 assertion)
 
 
 3) /Users/charles/Workspace/perso/testinfection/src/SourceClass.php:9    [M] ConcatOperandRemoval
@@ -109,26 +74,11 @@ $ '/Users/charles/Workspace/perso/testinfection/vendor/phpunit/phpunit/phpunit' 
   Warning:       Your XML configuration validates against a deprecated schema.
   Suggestion:    Migrate your XML configuration using "--migrate-configuration"!
   
-  E                                                                   1 / 1 (100%)
+  .                                                                   1 / 1 (100%)
   
   Time: 00:00.003, Memory: 8.00 MB
   
-  There was 1 error:
-  
-  1) App\SourceClassTest::test_hello
-  ApprovalTests\ApprovalMismatchException: The approved file does not match the received file
-  Approved: /Users/charles/Workspace/perso/testinfection/tests/approvals/SourceClassTest.test_hello.approved.txt
-  Received: /Users/charles/Workspace/perso/testinfection/tests/approvals/SourceClassTest.test_hello.received.txt
-  
-  /Users/charles/Workspace/perso/testinfection/vendor/approvals/approval-tests/src/Approvals.php:57
-  /Users/charles/Workspace/perso/testinfection/vendor/approvals/approval-tests/src/Approvals.php:20
-  /Users/charles/Workspace/perso/testinfection/vendor/approvals/approval-tests/src/Approvals.php:15
-  /Users/charles/Workspace/perso/testinfection/vendor/approvals/approval-tests/src/CombinationApprovals.php:84
-  /Users/charles/Workspace/perso/testinfection/vendor/approvals/approval-tests/src/CombinationApprovals.php:16
-  /Users/charles/Workspace/perso/testinfection/tests/SourceClassTest.php:17
-  
-  ERRORS!
-  Tests: 1, Assertions: 1, Errors: 1.
+  OK (1 test, 1 assertion)
 
 
 4) /Users/charles/Workspace/perso/testinfection/src/SourceClass.php:9    [M] ConcatOperandRemoval
@@ -150,27 +100,21 @@ $ '/Users/charles/Workspace/perso/testinfection/vendor/phpunit/phpunit/phpunit' 
   Warning:       Your XML configuration validates against a deprecated schema.
   Suggestion:    Migrate your XML configuration using "--migrate-configuration"!
   
-  E                                                                   1 / 1 (100%)
+  .                                                                   1 / 1 (100%)
   
   Time: 00:00.003, Memory: 8.00 MB
   
-  There was 1 error:
-  
-  1) App\SourceClassTest::test_hello
-  ApprovalTests\ApprovalMismatchException: The approved file does not match the received file
-  Approved: /Users/charles/Workspace/perso/testinfection/tests/approvals/SourceClassTest.test_hello.approved.txt
-  Received: /Users/charles/Workspace/perso/testinfection/tests/approvals/SourceClassTest.test_hello.received.txt
-  
-  /Users/charles/Workspace/perso/testinfection/vendor/approvals/approval-tests/src/Approvals.php:57
-  /Users/charles/Workspace/perso/testinfection/vendor/approvals/approval-tests/src/Approvals.php:20
-  /Users/charles/Workspace/perso/testinfection/vendor/approvals/approval-tests/src/Approvals.php:15
-  /Users/charles/Workspace/perso/testinfection/vendor/approvals/approval-tests/src/CombinationApprovals.php:84
-  /Users/charles/Workspace/perso/testinfection/vendor/approvals/approval-tests/src/CombinationApprovals.php:16
-  /Users/charles/Workspace/perso/testinfection/tests/SourceClassTest.php:17
-  
-  ERRORS!
-  Tests: 1, Assertions: 1, Errors: 1.
+  OK (1 test, 1 assertion)
 
+
+Timed Out mutants:
+==================
+
+Skipped mutants:
+================
+
+Killed mutants:
+===============
 
 Errors mutants:
 ===============
