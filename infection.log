@@ -40,10 +40,10 @@ $ '/Users/charles/Workspace/perso/testinfection/vendor/phpunit/phpunit/phpunit' 
   1) App\SourceClassTest::test_hello
   Error: Call to protected method App\SourceClass::hello() from scope App\SourceClassTest
   
-  /Users/charles/Workspace/perso/testinfection/tests/SourceClassTest.php:17
+  /Users/charles/Workspace/perso/testinfection/tests/SourceClassTest.php:16
   /Users/charles/Workspace/perso/testinfection/vendor/approvals/approval-tests/src/CombinationApprovals.php:68
   /Users/charles/Workspace/perso/testinfection/vendor/approvals/approval-tests/src/CombinationApprovals.php:16
-  /Users/charles/Workspace/perso/testinfection/tests/SourceClassTest.php:15
+  /Users/charles/Workspace/perso/testinfection/tests/SourceClassTest.php:14
   
   ERRORS!
   Tests: 1, Assertions: 0, Errors: 1.
@@ -84,7 +84,7 @@ $ '/Users/charles/Workspace/perso/testinfection/vendor/phpunit/phpunit/phpunit' 
   /Users/charles/Workspace/perso/testinfection/vendor/approvals/approval-tests/src/Approvals.php:15
   /Users/charles/Workspace/perso/testinfection/vendor/approvals/approval-tests/src/CombinationApprovals.php:84
   /Users/charles/Workspace/perso/testinfection/vendor/approvals/approval-tests/src/CombinationApprovals.php:16
-  /Users/charles/Workspace/perso/testinfection/tests/SourceClassTest.php:15
+  /Users/charles/Workspace/perso/testinfection/tests/SourceClassTest.php:14
   
   ERRORS!
   Tests: 1, Assertions: 1, Errors: 1.
@@ -111,7 +111,7 @@ $ '/Users/charles/Workspace/perso/testinfection/vendor/phpunit/phpunit/phpunit' 
   
   E                                                                   1 / 1 (100%)
   
-  Time: 00:00.007, Memory: 8.00 MB
+  Time: 00:00.006, Memory: 8.00 MB
   
   There was 1 error:
   
@@ -125,7 +125,7 @@ $ '/Users/charles/Workspace/perso/testinfection/vendor/phpunit/phpunit/phpunit' 
   /Users/charles/Workspace/perso/testinfection/vendor/approvals/approval-tests/src/Approvals.php:15
   /Users/charles/Workspace/perso/testinfection/vendor/approvals/approval-tests/src/CombinationApprovals.php:84
   /Users/charles/Workspace/perso/testinfection/vendor/approvals/approval-tests/src/CombinationApprovals.php:16
-  /Users/charles/Workspace/perso/testinfection/tests/SourceClassTest.php:15
+  /Users/charles/Workspace/perso/testinfection/tests/SourceClassTest.php:14
   
   ERRORS!
   Tests: 1, Assertions: 1, Errors: 1.
@@ -152,7 +152,7 @@ $ '/Users/charles/Workspace/perso/testinfection/vendor/phpunit/phpunit/phpunit' 
   
   E                                                                   1 / 1 (100%)
   
-  Time: 00:00.009, Memory: 8.00 MB
+  Time: 00:00.010, Memory: 8.00 MB
   
   There was 1 error:
   
@@ -166,7 +166,7 @@ $ '/Users/charles/Workspace/perso/testinfection/vendor/phpunit/phpunit/phpunit' 
   /Users/charles/Workspace/perso/testinfection/vendor/approvals/approval-tests/src/Approvals.php:15
   /Users/charles/Workspace/perso/testinfection/vendor/approvals/approval-tests/src/CombinationApprovals.php:84
   /Users/charles/Workspace/perso/testinfection/vendor/approvals/approval-tests/src/CombinationApprovals.php:16
-  /Users/charles/Workspace/perso/testinfection/tests/SourceClassTest.php:15
+  /Users/charles/Workspace/perso/testinfection/tests/SourceClassTest.php:14
   
   ERRORS!
   Tests: 1, Assertions: 1, Errors: 1.
